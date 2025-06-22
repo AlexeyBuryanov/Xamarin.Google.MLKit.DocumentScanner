@@ -1,4 +1,4 @@
-﻿# Document scanner with ML Kit on .NET for Android [![Nuget](https://img.shields.io/nuget/v/MLKitDocumentScanner)](https://www.nuget.org/packages/MLKitDocumentScanner)
+﻿# Document scanner with ML Kit on .NET for Android [![Nuget](https://img.shields.io/nuget/v/MLKitDocumentScanner)](https://www.nuget.org/packages/Xamarin.Google.MLKit.DocumentScanner)
 [Learn more about ML Kit document scanner](https://developers.google.com/ml-kit/vision/doc-scanner) | [Official docs](https://developers.google.com/ml-kit/vision/doc-scanner/android)
 
 Digitizing physical documents, which allows users to convert physical documents into digital formats has become a very common user journey in mobile apps. ML Kit's document scanner API provides a comprehensive solution with a high-quality, consistent UI flow across Android apps and devices. Once the document scanner flow is triggered from your app, users retain full control over the scanning process. They can optionally crop the scanned documents, apply filters, remove shadows or stains, and easily send the digitized files back to your app.
