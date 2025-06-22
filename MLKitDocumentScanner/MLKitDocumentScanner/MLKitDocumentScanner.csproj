@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net9.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsTrimmable>true</IsTrimmable>
+    <RootNamespace>MLKitDocumentScanner</RootNamespace>
+    <AssemblyName>MLKitDocumentScanner</AssemblyName>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <FileVersion>16.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>MLKitDocumentScanner</PackageId>
+    <Title>Document scanner with ML Kit on .NET for Android</Title>
+    <Summary>Use the ML Kit document scanner API to easily add a document scanner feature to your app.</Summary>
+    <Description>Digitizing physical documents, which allows users to convert physical documents into digital formats has become a very common user journey in mobile apps. ML Kit's document scanner API provides a comprehensive solution with a high-quality, consistent UI flow across Android apps and devices.</Description>
+    <Authors>Oleksii Burianov</Authors>
+    <Owners>Oleksii Burianov</Owners>
+    <Copyright>© Oleksii Burianov.</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/AlexeyBuryanov/MLKitDocumentScanner</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlexeyBuryanov/MLKitDocumentScanner</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageVersion>16.0.0-beta1</PackageVersion>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>MLKit; document; scanning; android</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidMavenLibrary
+      Include="com.google.android.gms:play-services-mlkit-document-scanner"
+      Version="16.0.0-beta1"
+      Repository="Google" />
+
+    <AndroidNamespaceReplacement
+      Include='com.google.mlkit.vision.documentscanner'
+      Replacement='Xamarin.Google.MLKit.Vision.DocumentScanner' />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Activity" Version="1.10.1.2" />
+    <PackageReference Include="Xamarin.Firebase.Components" Version="118.0.1.4" />
+    <PackageReference Include="Xamarin.Firebase.Encoders" Version="117.0.0.22" />
+    <PackageReference Include="Xamarin.Firebase.Encoders.JSON" Version="118.0.1.14" />
+    <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportApi" Version="4.0.0.4" />
+    <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportBackendCct" Version="4.0.0.4" />
+    <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportRuntime" Version="4.0.0.4" />
+    <PackageReference Include="Xamarin.Google.MLKit.Common" Version="118.11.0.4" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Base" Version="118.7.0.2" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="118.7.0.2" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Tasks" Version="118.3.0.2" />
+  </ItemGroup>
+
+</Project>
