@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MLKitDocumentScanner</PackageId>
+    <PackageId>Xamarin.Google.MLKit.DocumentScanner</PackageId>
     <Title>Document scanner with ML Kit on .NET for Android</Title>
     <Summary>Use the ML Kit document scanner API to easily add a document scanner feature to your app.</Summary>
     <Description>Digitizing physical documents, which allows users to convert physical documents into digital formats has become a very common user journey in mobile apps. ML Kit's document scanner API provides a comprehensive solution with a high-quality, consistent UI flow across Android apps and devices.</Description>
