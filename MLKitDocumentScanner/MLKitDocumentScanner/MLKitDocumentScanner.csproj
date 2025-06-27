@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>Xamarin.Google.MLKit.DocumentScanner</PackageId>
+    <PackageId>Net.Google.MLKit.DocumentScanner</PackageId>
     <Title>Document scanner with ML Kit on .NET for Android</Title>
     <Summary>Use the ML Kit document scanner API to easily add a document scanner feature to your app.</Summary>
     <Description>Digitizing physical documents, which allows users to convert physical documents into digital formats has become a very common user journey in mobile apps. ML Kit's document scanner API provides a comprehensive solution with a high-quality, consistent UI flow across Android apps and devices.</Description>
@@ -21,8 +21,8 @@
     <Owners>Oleksii Burianov</Owners>
     <Copyright>© Oleksii Burianov.</Copyright>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/AlexeyBuryanov/MLKitDocumentScanner</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/AlexeyBuryanov/MLKitDocumentScanner</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/AlexeyBuryanov/Net.Google.MLKit.DocumentScanner</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlexeyBuryanov/Net.Google.MLKit.DocumentScanner</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -57,7 +57,7 @@
 
     <AndroidNamespaceReplacement
       Include='com.google.mlkit.vision.documentscanner'
-      Replacement='Xamarin.Google.MLKit.Vision.DocumentScanner' />
+      Replacement='Net.Google.MLKit.Vision.DocumentScanner' />
   </ItemGroup>
 
   <ItemGroup>
